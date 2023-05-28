@@ -1,0 +1,11 @@
+:root{
+  --color-primary-light-Red : hsl(0, 36%, 70%);
+  --color-primary-soft-Red : hsl(0, 93%, 68%);
+  --color-neutral-gray-red : hsl(0, 6%, 24%);
+  --color-gradients-white : hsl(0, 6%, 24%);
+  
+}
+/* 
+- Linear, 135deg, from hsl(0, 0%, 100%), to hsl(0, 100%, 98%)
+- Linear, 135deg, from hsl(0, 80%, 86%), to hsl(0, 74%, 74%)
+*/ 
