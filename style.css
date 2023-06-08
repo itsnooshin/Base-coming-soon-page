@@ -78,38 +78,120 @@ body {
   margin-bottom: 2rem;
   margin-top: 2rem;
 }
-.input-container{
-  
-  border: 1px solid #CE9898;
+.input-container {
+  border: 1px solid #ce9898;
   border-radius: 40px;
   padding: 2rem 2rem;
 
   opacity: 0.5;
-  width: 50%;
-  overflow: hidden;
-}
-.input-container::placeholder {
-  /* font-family: "Josefin Sans", sans-serif;
-  color: #CE9898;
-  opacity: 0.5; */
-  /* font-family: "Josefin Sans"; */
-}
-.input-container:focus{
-  /* font-family: "Josefin Sans";
-  padding: 2rem 2rem;  */
-  outline: none;
-} 
-.email-container{
-  position: relative;
   width: 100%;
+ 
 }
-.arrow{
-background: linear-gradient(135deg, #F8BFBF 0%, #EE8B8B 100%);
-box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
-border-radius: 28px;
 
- padding: 2rem 4rem 1.7rem 4rem; 
- position: absolute; 
-left: 40%;
-top: 0;
+.input-container:focus {
+  outline: none;
+}
+.email-container {
+   position: relative;
+  width: 60%;
+}
+
+.arrow {
+  background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
+  box-shadow: 0px 15px 20px rgba(198, 110, 110, 0.247569);
+  border-radius: 28px;
+  padding: 2rem 4rem 1.7rem 4rem;
+  position: absolute;
+  right:0;
+ 
+  top: 0;
+}
+.information .image-background{
+  display: none;
+}
+
+@media  (max-width: 1024px) {
+  html{
+    font-size: 56.25%;
+    overflow-y: none;
+  }
+  .header-logo img {
+    padding: 7rem 2rem 6rem 4rem;
+  }
+  .main-information {
+    padding: 2rem 2rem 6rem 4rem;
+  }
+  .main {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    
+  }
+  .image-background{
+    height: 100vh;
+    height: 100%;
+  }
+  .email-container {
+   width: 70%;
+ }
+
+}
+
+
+@media (max-width: 800px) {
+
+  html{
+    font-size: 50%;
+  }
+  .main {
+    grid-template-columns: 1fr;
+  }
+  .image-background {
+   
+    background-position: top;
+    
+  }
+  .main-information{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .collection-mobile{
+    height: 330px;
+    background-image: url("./images/Bitmap.png");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+  }
+  .collection{
+    display: none;
+  }
+  .information{
+    background-image: none;
+  
+  }
+  .main-information{
+    margin-top: 6rem;
+    margin-bottom: 4rem;
+    text-align: center;
+  }
+  .main-title{
+    font-size: 5rem;
+    text-align: center;
+  }
+  .main-title-title{
+    text-align: center;
+    font-size: 5rem;
+  }
+  .lead{
+    text-align: center;
+    font-size: 1.7rem;
+    line-height: 22px;
+    margin-bottom: 3rem;
+  }
+
+  .email-container {
+  
+    width: 85%;
+  }
 }
