@@ -20,7 +20,11 @@ html {
 body {
   font-family: "Josefin Sans", sans-serif;
 }
-
+button{
+  border: none;
+  background-color: none;
+  cursor: pointer;
+}
 .image-background {
   background-image: url("./images/hero-desktop.jpg");
   background-repeat: no-repeat;
@@ -85,7 +89,7 @@ body {
 
   opacity: 0.5;
   width: 100%;
- 
+  position: relative;
 }
 
 .input-container:focus {
@@ -95,6 +99,28 @@ body {
    position: relative;
   width: 60%;
 }
+.error{
+  position: absolute;
+  top: 0;
+  left: 65%; 
+  z-index: 2000; 
+  transform: translate(50% , 50%);
+  display: none;
+}
+.error-message {
+  font-size: 1.3rem;
+  font-family: inherit;
+  padding-left: 2rem;
+  color: red;
+  padding-top: 1rem;
+}
+.currect-message{
+  font-size: 1.3rem;
+  font-family: inherit;
+  padding-left: 2rem;
+  color: green;
+  padding-top: 1rem;
+}
 
 .arrow {
   background: linear-gradient(135deg, #f8bfbf 0%, #ee8b8b 100%);
@@ -103,7 +129,7 @@ body {
   padding: 2rem 4rem 1.7rem 4rem;
   position: absolute;
   right:0;
- 
+   
   top: 0;
 }
 .information .image-background{
@@ -191,7 +217,7 @@ body {
   }
 
   .email-container {
-  
+
     width: 85%;
   }
 }
