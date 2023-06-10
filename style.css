@@ -19,30 +19,23 @@ html {
 }
 body {
   font-family: "Josefin Sans", sans-serif;
+ 
 }
 button{
   border: none;
   background-color: none;
   cursor: pointer;
 }
-.main-img{
-  /* background-image: url("./images/hero-desktop.jpg");
-  background-repeat: no-repeat;
-  height: 100%;
-  background-position: top center;
-  background-size: contain;
-  height: 100vh; */
-}
-.img{
+.image-background{
   background-image: url("./images/hero-desktop.jpg");
   background-repeat: no-repeat;
-  height: 100%;
   background-position: top center;
-  /* background-size: contain; */
+  background-size: cover;
+  height: 100vh;
 }
-
-
-
+.img{
+  height: 100%;
+}
 .main {
   display: grid;
   grid-template-columns: 1.9fr 1.2fr;
